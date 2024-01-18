@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="kalkulator.css">
+    <title>Kalkulator</title>
+</head>
+<body>
+    <div class="calculator bg-secondary">
+        <input type="text" id="display" class="display bg-light" disabled>
+        <div class="buttons">
+            <button onclick="appenNumber('1')">1</button>
+            <button onclick="appenNumber('2')">2</button>
+            <button onclick="appenNumber('3')">3</button>
+            <button class="bg-success text-light" onclick="appenOperator('/')">÷</button>
+            <button onclick="appenNumber('4')">4</button>
+            <button onclick="appenNumber('5')">5</button>
+            <button onclick="appenNumber('6')">6</button>
+            <button class="bg-success text-light" onclick="appenOperator('*')">x</button>
+            <button onclick="appenNumber('7')">7</button>
+            <button onclick="appenNumber('8')">8</button>
+            <button onclick="appenNumber('9')">9</button>
+            <button class="bg-success text-light" onclick="appenOperator('-')">-</button>
+            <button onclick="appenNumber('0')">0</button>
+            <button onclick="appenNumber('00')">00</button>
+            <button onclick="appenNumber('000')">000</button>
+            <button class="bg-success text-light" onclick="appenOperator('+')">+</button>
+            <button class="bg-danger text-light" onclick="clearDisplay()">AC</button>
+            <button onclick="deleteOne()">←</button>
+            <button onclick="appenNumber('.')">.</button>
+            <button class="bg-primary text-light" onclick="calculateResult()">=</button>
+        </div>
+    </div>
+
+    <script src="kalkulator.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+</body>
+</html>
